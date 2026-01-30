@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT Buổi 1</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; max-width: 800px; margin: 0 auto; }
+        h1 { color: #2c3e50; }
+        .controls { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 20px; }
+        button {
+            padding: 10px; background-color: #3498db; color: white;
+            border: none; border-radius: 4px; cursor: pointer; font-size: 14px;
+        }
+        button:hover { background-color: #2980b9; }
+        #output {
+            background-color: #f4f4f4; padding: 15px; border-radius: 5px;
+            border: 1px solid #ddd; min-height: 200px; white-space: pre-wrap; /* Giữ format xuống dòng */
+            font-family: monospace; /* Font kiểu code */
+        }
+        .highlight { color: #e74c3c; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <p>Nhấn vào các nút bên dưới để xem kết quả:</p>
+
+    <div class="controls">
+        <button onclick="showAllProducts()">Câu 2: Xem toàn bộ danh sách</button>
+        <button onclick="showNamePrice()">Câu 3: Chỉ lấy Name & Price</button>
+        <button onclick="filterInStock()">Câu 4: Lọc hàng còn kho (>0)</button>
+        <button onclick="checkExpensive()">Câu 5: Có hàng > 30 triệu?</button>
+        <button onclick="checkAccessories()">Câu 6: Tất cả Accessories đang bán?</button>
+        <button onclick="calcTotalValue()">Câu 7: Tổng giá trị kho</button>
+        <button onclick="loopForOf()">Câu 8: Duyệt (For...Of)</button>
+        <button onclick="loopForIn()">Câu 9: Duyệt thuộc tính (For...In)</button>
+        <button onclick="getSellingProducts()">Câu 10: Đang bán & Còn hàng</button>
+    </div>
+
+    <h3>Kết quả hiển thị:</h3>
+    <div id="output"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
