@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Product Dashboard</h1>
+
+        <!-- Controls will go here in later steps -->
+        <div id="controls" class="controls">
+            <input type="text" id="search-input" placeholder="Search by title...">
+            <select id="page-size">
+                <option value="5">5 per page</option>
+                <option value="10">10 per page</option>
+                <option value="20">20 per page</option>
+            </select>
+            <div class="sort-controls">
+                <button id="sort-price-asc">Price ↑</button>
+                <button id="sort-price-desc">Price ↓</button>
+                <button id="sort-name-asc">Name A-Z</button>
+                <button id="sort-name-desc">Name Z-A</button>
+            </div>
+        </div>
+
+        <table id="product-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Data will be injected here -->
+            </tbody>
+        </table>
+
+        <div id="pagination" class="pagination">
+            <!-- Pagination buttons will be injected here -->
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
